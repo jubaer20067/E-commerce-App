@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsPage"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:contentDescription="Back"
+            android:layout_gravity="start|center_vertical"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_ios_share_24"
+            android:contentDescription="Menu button"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/_10sdp"
+
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_150sdp"
+        app:iss_auto_cycle="false"
+        app:iss_period="1000"
+        app:iss_delay="1000"
+        app:iss_text_align="CENTER"/>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/textBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:textSize="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/textRatings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ratings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textStokes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stokes"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+         />
+
+        <TextView
+            android:id="@+id/textDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_margin="@dimen/_15sdp"
+        android:textColor="#777575"/>
+
+    <TextView
+        android:id="@+id/warrantyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Warranty"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/shippingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shipping Information"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:textColor="@color/black"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_marginBottom="@dimen/_15sdp"
+    >
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Now"
+        android:backgroundTint="@color/pink"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:padding="@dimen/_10sdp"
+        />
+
+</LinearLayout>
+
+
+</LinearLayout>

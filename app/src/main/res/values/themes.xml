@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ecommers" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Ecommers" parent="Base.Theme.Ecommers" />
+
+
+    <style name="Customized" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:background">@drawable/menu_bg</item>
+    </style>
+
+</resources>
